@@ -215,7 +215,7 @@ abstract class PHPUnit_Util_PHP
             if ($file) {
                 $command .= '-e ' . escapeshellarg($file);
             } else {
-                $command .= escapeshellarg(__DIR__ . '/PHP/eval-stdin.php');
+                $command .= escapeshellarg(__DIR__ . '/PHP/eval-stdin.tpl');
             }
         } elseif ($file) {
             $command .= ' -f ' . escapeshellarg($file);
